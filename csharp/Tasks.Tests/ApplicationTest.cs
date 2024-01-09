@@ -29,7 +29,7 @@ namespace Tasks
 				return;
 			}
 
-			applicationThread.Abort();
+			applicationThread.Interrupt();
 			throw new Exception("The application is still running.");
 		}
 
